@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Dissapearing Ninja</title>
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+		<script>
+			$(document).ready(function(){
+				$('img').click(function(){
+					$(this).css('visibility','hidden'); 
+				}); 
+				$('button').click(function(){
+					$('img').css('visibility','visible'); 
+				});
+			}); 
+
+		</script>
+		<style>
+			.container {
+				text-align: center;
+				width: 700px; 
+				padding: 10px; 
+			}
+			img {
+				width: 145px; 
+				border: 4px solid black; 
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>JQuery- Assignment 1</h1>
+			<img src="ninja.png">
+			<img src="ninja.png">
+			<img src="ninja.png">
+			<img src="ninja.png">
+			<img src="ninja.png">
+			<img src="ninja.png">
+			<img src="ninja.png">
+			<img src="ninja.png">
+			<button style="display: block;">RESTORE</button>
+		</div>
+
+	</body>
+</html>
